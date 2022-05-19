@@ -1,0 +1,18 @@
+<h2>My Workouts</h2>
+<ul class="Workouts">
+  <li *ngFor="let Workouts of workouts">
+    <button [class.selected]="Workouts === selectedWorkouts" type="button" (click)="onSelect(Workouts)">
+      <span class="badge">{{Workouts.id}}</span>
+      <span class="name">{{Workouts.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedWorkouts">
+  <h2>{{selectedWorkouts.name | uppercase}} Details</h2>
+  <div>id: {{selectedWorkouts.id}}</div>
+  <div>
+    <label for="workouts-name">Workouts name: </label>
+    <input id="workouts-name" [(ngModel)]="selectedWorkouts.name" placeholder="name">
+  </div>
+</div>
