@@ -1,0 +1,9 @@
+<div *ngIf="workouts">
+    <h2>{{workouts.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{workouts.id}}</div>
+    <div>
+      <label for="workouts-name">Workouts name: </label>
+      <input id="workouts-name" [(ngModel)]="workouts.name" placeholder="Workouts name">
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>

@@ -1,1 +1,7 @@
-<h2>Top Heroes</h2>
+<h2>Best Workouts</h2>
+<div class="workout-menu">
+  <a *ngFor="let Workouts of workout"
+    routerLink="/detail/{{Workouts.id}}">
+    {{Workouts.name}}
+  </a>
+</div>

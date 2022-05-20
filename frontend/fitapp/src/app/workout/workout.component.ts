@@ -1,23 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Workouts } from '../workouts';
-import { WORKOUTS } from '../mock-workouts';
+import { WorkoutService } from '../workouts.service';
 
 @Component({
   selector: 'app-workout',
   templateUrl: './workout.component.html',
   styleUrls: ['./workout.component.css']
 })
+
 export class WorkoutComponent implements OnInit {
+  workout: Workouts[] = [];
+  todaysDate = new Date();
 
-  workouts = WORKOUTS;
-  selectedWorkouts?: Workouts;
-
-  constructor() { }
+  constructor(private workoutService: WorkoutService) { }
 
   ngOnInit(): void {
+    this.getWorkout();
   }
 
-  onSelect(workouts: Workouts): void {
-    this.selectedWorkouts = workouts;
+  getWorkout(): void {
+    this.workoutService.getWorkout()
+        .subscribe(workout => this.workout = workout);
   }
 }
