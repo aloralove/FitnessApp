@@ -1,13 +1,13 @@
 import { Workouts } from './workouts';
 
 export const WORKOUTS: Workouts[] = [
-  { id: 12, name: 'Legs' },
-  { id: 13, name: 'Arms' },
-  { id: 14, name: 'Back' },
-  { id: 15, name: 'Upperbody' },
-  { id: 16, name: 'Lowerbody' },
-  { id: 17, name: 'Fullbody' },
-  { id: 18, name: 'HIIT' },
-  { id: 19, name: 'Yoga' },
+  { id: 1, name: 'Arms' },
+  { id: 2, name: 'HIIT' },
+  { id: 3, name: 'Legs' },
+  { id: 4, name: 'Fullbody' },
+  { id: 5, name: 'Lowerbody' },
+  { id: 6, name: 'Upperbody' },
+  { id: 7, name: 'Back' },
+  { id: 8, name: 'Yoga' },
 
 ];

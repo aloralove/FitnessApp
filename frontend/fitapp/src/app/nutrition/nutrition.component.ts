@@ -3,14 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Workouts } from '../workouts';
 import { WorkoutService } from '../workouts.service';
 
-
 @Component({
-  selector: 'app-workout',
-  templateUrl: './workout.component.html',
-  styleUrls: ['./workout.component.css']
+  selector: 'app-nutrition',
+  templateUrl: './nutrition.component.html',
+  styleUrls: ['./nutrition.component.css']
 })
-
-export class WorkoutComponent implements OnInit {
+export class NutritionComponent implements OnInit {
   workout: Workouts[] = [];
   todaysDate = new Date();
 

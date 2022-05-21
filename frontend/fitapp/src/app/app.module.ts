@@ -10,6 +10,9 @@ import { WorkoutComponent } from './workout/workout.component';
 import { WorkoutDetailComponent } from './workout-detail/workout-detail.component';
 import { WorkoutSearchComponent } from './workout-search/workout-search.component';
 import { MessagesComponent } from './messages/messages.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { NutritionComponent } from './nutrition/nutrition.component';
+import { ChallengesComponent } from './challenges/challenges.component';
 
 @NgModule({
 
@@ -25,7 +28,10 @@ import { MessagesComponent } from './messages/messages.component';
     WorkoutComponent,
     WorkoutDetailComponent,
     WorkoutSearchComponent,
-    MessagesComponent
+    MessagesComponent,
+    CalendarComponent,
+    NutritionComponent,
+    ChallengesComponent
   ],
 
   bootstrap: [AppComponent]
