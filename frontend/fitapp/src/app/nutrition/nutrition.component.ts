@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Workouts } from '../workouts';
-import { WorkoutService } from '../workouts.service';
+import { NutritionList } from '../nutritionList';
+import { NutritionListService } from '../nutritionList.service';
 
 @Component({
   selector: 'app-nutrition',
@@ -9,22 +9,22 @@ import { WorkoutService } from '../workouts.service';
   styleUrls: ['./nutrition.component.css']
 })
 export class NutritionComponent implements OnInit {
-  workout: Workouts[] = [];
+  nutrition: NutritionList[] = [];
   todaysDate = new Date();
 
   constructor(
-    private workoutService: WorkoutService,
+    private nurtitionListService: NutritionListService,
 
     
     ) { }
 
   ngOnInit(): void {
-    this.getWorkout();
+    this.getNutrition();
   }
 
-  getWorkout(): void {
-    this.workoutService.getWorkout()
-        .subscribe(workout => this.workout = workout);
+  getNutrition(): void {
+    this.nurtitionListService.getNutrition()
+        .subscribe(nutrition => this.nutrition = nutrition);
   }
 
 

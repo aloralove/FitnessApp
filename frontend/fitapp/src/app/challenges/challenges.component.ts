@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Workouts } from '../workouts';
-import { WorkoutService } from '../workouts.service';
+import { ChallengesList } from '../challengesList';
+import { ChallengesListService } from '../challengesList.service';
 
 @Component({
   selector: 'app-challenges',
@@ -10,22 +10,22 @@ import { WorkoutService } from '../workouts.service';
 })
 
 export class ChallengesComponent implements OnInit {
-  workout: Workouts[] = [];
+  challenges: ChallengesList[] = [];
   todaysDate = new Date();
 
   constructor(
-    private workoutService: WorkoutService,
+    private challengesListService: ChallengesListService,
 
     
     ) { }
     
     ngOnInit(): void {
-      this.getWorkout();
+      this.getChallenges();
     }
   
-    getWorkout(): void {
-      this.workoutService.getWorkout()
-          .subscribe(workout => this.workout = workout);
+    getChallenges(): void {
+      this.challengesListService.getChallenges()
+          .subscribe(challenges => this.challenges = challenges);
     }
   
   
