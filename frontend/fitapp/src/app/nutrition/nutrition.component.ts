@@ -14,8 +14,6 @@ export class NutritionComponent implements OnInit {
 
   constructor(
     private nurtitionListService: NutritionListService,
-
-    
     ) { }
 
   ngOnInit(): void {
