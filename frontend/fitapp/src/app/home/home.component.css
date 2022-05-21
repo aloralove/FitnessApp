@@ -1,4 +1,4 @@
-/* HomeComponent's private CSS styles */
+/* WorkoutComponent's private CSS styles */
 
 h2 {
     text-align: center;
@@ -19,8 +19,8 @@ h2 {
   }
   
   a {
-    background-color: #3f525c;
-    border-radius: 2px;
+    background-color: #1c9de2;
+    border-radius: 12px;
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
@@ -46,5 +46,5 @@ h2 {
   }
   
   a:hover {
-    background-color: #000;
+    background-color: rgb(78, 232, 240);
   }

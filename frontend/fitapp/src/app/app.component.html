@@ -1,11 +1,24 @@
 <h1>{{title}}</h1>
-  <nav>
-    <a routerLink="/home">Home</a>
-    <a routerLink="/workout">Workouts</a>
-    <a routerLink="/calendar">Calendar</a>
-    <a routerLink="/challenges">Challenges</a>
-    <a routerLink="/nutrition">Nutrition</a>
-  </nav>
+
+
+
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a routerLink="/home" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/workout" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Workouts</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/calendar" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Calendar</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/challenges" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Challenges</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/nutrition" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Nutrition</a>
+  </li>
+</ul>
 
 <router-outlet></router-outlet>
 <app-messages></app-messages>
