@@ -33,7 +33,6 @@ import { ChallengesComponent } from './challenges/challenges.component';
     NutritionComponent,
     ChallengesComponent
   ],
-
   bootstrap: [AppComponent]
 })
 export class AppModule { }
