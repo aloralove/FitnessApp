@@ -1,4 +1,5 @@
 /* calendarComponent's private CSS styles */
+
 .calendar {
     margin: 0 0 2em 0;
     list-style-type: none;
@@ -52,3 +53,6 @@
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
   }
+  .cal-events {
+    display: none !important;
+}
